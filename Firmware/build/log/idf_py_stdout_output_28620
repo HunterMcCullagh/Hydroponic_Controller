@@ -1,0 +1,184 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2b (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42007427
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x178c
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xcb8
+load:0x403cb700,len:0x2db0
+entry 0x403c8914
+[0;32mI (26) boot: ESP-IDF v5.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Aug  1 2025 15:06:18[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.1[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (38) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (53) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (71) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (86) boot: End of partition table[0m
+[0;32mI (91) esp_image: segment 0: paddr=00010020 vaddr=3c090020 size=2409ch (147612) map[0m
+[0;32mI (125) esp_image: segment 1: paddr=000340c4 vaddr=3fc9a300 size=04bf8h ( 19448) load[0m
+[0;32mI (130) esp_image: segment 2: paddr=00038cc4 vaddr=40374000 size=07354h ( 29524) load[0m
+[0;32mI (138) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=8e0f4h (581876) map[0m
+[0;32mI (244) esp_image: segment 4: paddr=000ce11c vaddr=4037b354 size=0ef98h ( 61336) load[0m
+[0;32mI (267) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (267) boot: Disabling RNG early entropy source...[0m
+[0;32mI (279) cpu_start: Multicore app[0m
+[0;32mI (289) cpu_start: Pro cpu start user code[0m
+[0;32mI (289) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (289) app_init: Application information:[0m
+[0;32mI (292) app_init: Project name:     ESP32_hydroponic_control[0m
+[0;32mI (298) app_init: App version:      1[0m
+[0;32mI (302) app_init: Compile time:     Aug  1 2025 15:05:58[0m
+[0;32mI (308) app_init: ELF file SHA256:  3469e859e...[0m
+[0;32mI (314) app_init: ESP-IDF:          v5.3[0m
+[0;32mI (318) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (323) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (328) efuse_init: Chip rev:         v0.1[0m
+[0;32mI (333) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (340) heap_init: At 3FCA2AF8 len 00046C18 (283 KiB): RAM[0m
+[0;32mI (346) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (352) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (358) heap_init: At 600FE100 len 00001EE8 (7 KiB): RTCRAM[0m
+[0;32mI (366) spi_flash: detected chip: gd[0m
+[0;32mI (369) spi_flash: flash io: dio[0m
+[0;33mW (373) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (386) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (393) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (400) main_task: Started on CPU0[0m
+[0;32mI (410) main_task: Calling app_main()[0m
+[0;32mI (430) gpio: GPIO[2]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (430) gpio: GPIO[48]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (440) pp: pp rom version: e7ae62f[0m
+[0;32mI (440) net80211: net80211 rom version: e7ae62f[0m
+I (460) wifi:wifi driver task: 3fcad1ac, prio:23, stack:6656, core=0
+I (470) wifi:wifi firmware version: 0caa81945
+I (470) wifi:wifi certification version: v7.0
+I (470) wifi:config NVS flash: enabled
+I (470) wifi:config nano formating: disabled
+I (470) wifi:Init data frame dynamic rx buffer num: 32
+I (480) wifi:Init static rx mgmt buffer num: 5
+I (480) wifi:Init management short buffer num: 32
+I (480) wifi:Init dynamic tx buffer num: 32
+I (490) wifi:Init static tx FG buffer num: 2
+I (490) wifi:Init static rx buffer size: 1600
+I (500) wifi:Init static rx buffer num: 10
+I (500) wifi:Init dynamic rx buffer num: 32
+[0;32mI (500) wifi_init: rx ba win: 6[0m
+[0;32mI (510) wifi_init: accept mbox: 6[0m
+[0;32mI (510) wifi_init: tcpip mbox: 32[0m
+[0;32mI (520) wifi_init: udp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp mbox: 6[0m
+[0;32mI (520) wifi_init: tcp tx win: 5760[0m
+[0;32mI (530) wifi_init: tcp rx win: 5760[0m
+[0;32mI (530) wifi_init: tcp mss: 1440[0m
+[0;32mI (540) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (540) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (550) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (610) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (660) wifi:mode : sta (84:f7:03:c0:21:48)
+I (660) wifi:enable tsf
+[0;32mI (670) websrv: Connecting to Wi-Fi SSID:Hunters Iphone[0m
+I (670) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (670) wifi:state: init -> auth (0xb0)
+I (5040) wifi:state: auth -> init (0x200)
+I (5040) wifi:new:<6,0>, old:<6,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+[0;32mI (5670) websrv: Starting server on port 80[0m
+[0;32mI (5670) websrv: IP: 0.0.0.0[0m
+[0;32mI (5670) websrv: Error with internet connection, trying again[0m
+I (6670) wifi:flush txq
+I (6670) wifi:stop sw txq
+I (6670) wifi:lmac stop hw txq
+I (7670) wifi:mode : sta (84:f7:03:c0:21:48)
+I (7670) wifi:enable tsf
+[0;32mI (8670) websrv: IP: 0.0.0.0[0m
+[0;32mI (8670) websrv: Error with internet connection, trying again[0m
+I (475) wifi:wifi driver task: 3fcad1ac, prio:23, stack:6656, core=0
+I (485) wifi:wifi firmware version: 0caa81945
+I (485) wifi:wifi certification version: v7.0
+I (485) wifi:config NVS flash: enabled
+I (485) wifi:config nano formating: disabled
+I (485) wifi:Init data frame dynamic rx buffer num: 32
+I (495) wifi:Init static rx mgmt buffer num: 5
+I (495) wifi:Init management short buffer num: 32
+I (495) wifi:Init dynamic tx buffer num: 32
+I (505) wifi:Init static tx FG buffer num: 2
+I (505) wifi:Init static rx buffer size: 1600
+I (515) wifi:Init static rx buffer num: 10
+I (515) wifi:Init dynamic rx buffer num: 32
+[0;32mI (515) wifi_init: rx ba win: 6[0m
+[0;32mI (525) wifi_init: accept mbox: 6[0m
+[0;32mI (525) wifi_init: tcpip mbox: 32[0m
+[0;32mI (535) wifi_init: udp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp mbox: 6[0m
+[0;32mI (535) wifi_init: tcp tx win: 5760[0m
+[0;32mI (545) wifi_init: tcp rx win: 5760[0m
+[0;32mI (545) wifi_init: tcp mss: 1440[0m
+[0;32mI (555) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (555) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (565) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (605) phy_init: saving new calibration data because of checksum failure, mode(0)[0m
+I (625) wifi:mode : sta (84:f7:03:c0:21:48)
+I (625) wifi:enable tsf
+[0;32mI (625) websrv: Connecting to Wi-Fi SSID:Hunters Iphone[0m
+I (635) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0
+I (635) wifi:state: init -> auth (0xb0)
+I (1445) wifi:state: auth -> assoc (0x0)
+I (1445) wifi:state: assoc -> run (0x10)
+I (2245) wifi:connected with Hunters Iphone, aid = 1, channel 6, BW20, bssid = f2:a9:d7:22:c1:ad
+I (2245) wifi:security: WPA3-SAE, phy: bgn, rssi: -19
+I (2255) wifi:pm start, type: 1
+
+I (2255) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (2265) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (2285) wifi:<ba-add>idx:0 (ifx:0, f2:a9:d7:22:c1:ad), tid:0, ssn:20, winSize:64
+I (2305) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3275) esp_netif_handlers: sta ip: 172.20.10.14, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5625) websrv: Starting server on port 80[0m
+[0;32mI (5625) websrv: IP: 172.20.10.14[0m
+I (1425) wifi:state: auth -> assoc (0x0)
+I (1425) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (1635) wifi:state: assoc -> assoc (0x0)
+I (1635) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (1835) wifi:state: assoc -> assoc (0x0)
+I (1845) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (2045) wifi:state: assoc -> assoc (0x0)
+I (2045) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (2245) wifi:state: assoc -> assoc (0x0)
+I (2255) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (2455) wifi:state: assoc -> assoc (0x0)
+I (2455) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (2655) wifi:state: assoc -> assoc (0x0)
+I (2665) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (2865) wifi:state: assoc -> assoc (0x0)
+I (2865) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (3065) wifi:state: assoc -> assoc (0x0)
+I (3075) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (3275) wifi:state: assoc -> assoc (0x0)
+I (3275) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (3485) wifi:state: assoc -> assoc (0x0)
+I (3485) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (3685) wifi:state: assoc -> assoc (0x0)
+I (3695) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (3895) wifi:state: assoc -> assoc (0x0)
+I (3895) wifi:Association refused temporarily, comeback time 196 (TUs)
+I (4095) wifi:state: assoc -> assoc (0x0)
+I (4105) wifi:state: assoc -> run (0x10)
+I (4135) wifi:connected with Hunters Iphone, aid = 1, channel 6, BW20, bssid = f2:a9:d7:22:c1:ad
+I (4135) wifi:security: WPA3-SAE, phy: bgn, rssi: -32
+I (4145) wifi:pm start, type: 1
+
+I (4145) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4145) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000
+I (4165) wifi:<ba-add>idx:0 (ifx:0, f2:a9:d7:22:c1:ad), tid:0, ssn:24, winSize:64
+I (4215) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5155) esp_netif_handlers: sta ip: 172.20.10.14, mask: 255.255.255.240, gw: 172.20.10.1[0m
+[0;32mI (5605) websrv: Starting server on port 80[0m
+[0;32mI (5605) websrv: IP: 172.20.10.14[0m
