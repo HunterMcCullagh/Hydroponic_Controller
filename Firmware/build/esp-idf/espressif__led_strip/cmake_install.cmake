@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/managed_components/espressif__led_strip
+# Install script for directory: C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/managed_components/espressif__led_strip
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

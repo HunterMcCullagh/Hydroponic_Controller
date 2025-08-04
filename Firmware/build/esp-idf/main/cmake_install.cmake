@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/main
+# Install script for directory: C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

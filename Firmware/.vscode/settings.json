@@ -2,6 +2,10 @@
     "files.associations": {
         "stdlib.h": "c",
         "stdint.h": "c",
-        "webpage.h": "c"
+        "webpage.h": "c",
+        "html_page.h": "c",
+        "stdbool.h": "c",
+        "led_strip.h": "c",
+        "esp32_hydroponic_control.h": "c"
     }
 }

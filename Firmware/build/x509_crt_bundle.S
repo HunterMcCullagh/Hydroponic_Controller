@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

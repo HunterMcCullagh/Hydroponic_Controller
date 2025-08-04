@@ -14,5 +14,11 @@ const char* html_page =
     "<input type=\"submit\" value=\"Send\">"
     "</form>"
 
+    "<h2>Heater P Value: %d</h2>"
+
+    "<h2>Heater I Value: %d</h2>"
+
+    "<h2>Heater D Value: %d</h2>"
+
     "</body></html>";
 

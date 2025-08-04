@@ -11,7 +11,9 @@
 #include "driver/gpio.h"
 #include "led_strip.h"
 
+#include "ESP32_hydroponic_control.h"
 #include "html_page.h"
+#include "string_functions.h"
 
 static const char *TAG = "websrv";
 #define GPIO_LED 2
@@ -41,15 +43,19 @@ int var1 = 10;
 int var2 = 20;
 int var3 = 30;
 
+int heater_p = 10;
+int heater_i = 20;
+int heater_d = 30;
+
 /* URI handlers */
 esp_err_t root_get_handler(httpd_req_t *req) {
 
-    char page_buffer[1024];
-    snprintf(page_buffer, sizeof(page_buffer), html_page, var1, var2, var3); //add variables
+    char html_buffer[1024];
+    snprintf(html_buffer, sizeof(html_buffer), html_page, heater_p, heater_i, heater_d); //add variables
 
 
     httpd_resp_set_type(req, "text/html");
-    httpd_resp_send(req, page_buffer, HTTPD_RESP_USE_STRLEN);
+    httpd_resp_send(req, html_buffer, HTTPD_RESP_USE_STRLEN);
     return ESP_OK;
 }
 
@@ -113,6 +119,9 @@ esp_err_t submit_handler(httpd_req_t *req) {
         char param[32];
         if (httpd_query_key_value(buf, "name", param, sizeof(param)) == ESP_OK) {
             ESP_LOGI(TAG, "Received input: %s", param);
+
+            process_input((char *)param);
+            //heater_p+=1; //test to see if it updates
         }
     }
     //httpd_resp_send(req, "OK", HTTPD_RESP_USE_STRLEN);

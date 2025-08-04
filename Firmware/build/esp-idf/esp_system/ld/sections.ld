@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Users\hmccu\Desktop\Projects\Hydroponics\Firmware\ESP32_hydroponic_control\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: C:\Users\hmccu\Desktop\Projects\Hydroponics\Github\Hydroponic_Controller\Firmware\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

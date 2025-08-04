@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "C:/Espressif/frameworks/esp-idf-v5.3/components/bootloader/subproject"
-  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader"
-  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix"
-  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix/tmp"
-  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix/src/bootloader-stamp"
-  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix/src"
-  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader"
+  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix"
+  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix/tmp"
+  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix/src/bootloader-stamp"
+  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix/src"
+  "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "C:/Users/hmccu/Desktop/Projects/Hydroponics/Firmware/ESP32_hydroponic_control/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "C:/Users/hmccu/Desktop/Projects/Hydroponics/Github/Hydroponic_Controller/Firmware/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
